@@ -1,0 +1,21 @@
+@use './fonts.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  min-height: 100dvh;
+}
+
+body {
+  margin: 0;
+  font-family: PT Sans;
+}
+
+button {
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+}
