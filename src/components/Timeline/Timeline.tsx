@@ -35,6 +35,7 @@ export const Timeline: FC<TimelineProps> = ({ value, onChange, dates }) => {
       snap: { textContent: 1 },
       stagger: 1,
     });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [value])
 
   const select = useCallback((val: number) => () => onChange(val), [onChange]);
@@ -49,6 +50,7 @@ export const Timeline: FC<TimelineProps> = ({ value, onChange, dates }) => {
       * (value - lastValue < -dates.length / 2 ? -1 : 1)
     );
     setLastValue(value);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [value]);
 
   return <>

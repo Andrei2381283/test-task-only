@@ -1,7 +1,6 @@
 import React, { FC, useState } from 'react';
 import type SwiperType from 'swiper';
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { useIsMobile } from '../../helpers/useIsMobile';
 import { DateItem } from '../App/App';
 import swipeButton from '../../assets/swipe-button.svg';
@@ -24,7 +23,7 @@ export const DatesSwiper: FC<DatesSwiperProps> = ({ value, dates, }) => {
     {isMobile && <span className='DatesSwiper-Title'>{dates[value].title}</span>}
     {isMobile && <div className='DatesSwiper-Line'></div>}
     {currentSlide !== 0 && !isMobile && swiper && <button onClick={() => swiper.slidePrev()} className='DatesSwiper-SwipeButton DatesSwiper-SwipeButton_left'>
-      <img src={swipeButton} width={5} height={10} />
+      <img src={swipeButton} width={5} height={10} alt='Scroll left arrow' />
     </button>}
     <Swiper
       spaceBetween={isMobile ? 25 : 50}
@@ -40,7 +39,7 @@ export const DatesSwiper: FC<DatesSwiperProps> = ({ value, dates, }) => {
       )}
     </Swiper>
     {currentSlide !== Object.keys(dates[value].progress).length - 1 - 2 && !isMobile && swiper && <button onClick={() => swiper.slideNext()} className='DatesSwiper-SwipeButton DatesSwiper-SwipeButton_right'>
-      <img src={swipeButton} width={5} height={10} />
+      <img src={swipeButton} width={5} height={10} alt='Scroll right arrow' />
     </button>}
   </div>
 }
