@@ -18,6 +18,10 @@
     }
   }
 
+  @media (max-width: 734px) {
+    margin: 56px 0 0 0;
+  }
+
   div &-Slide {
     display: flex;
     flex-direction: column;
