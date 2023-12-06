@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/test-task-only/static/css/main.c2a62e08.css",
+    "main.js": "/test-task-only/static/js/main.64ef4dca.js",
+    "static/media/PTSans-Bold.ttf": "/test-task-only/static/media/PTSans-Bold.610bc32a7e32c292ce59.ttf",
+    "static/media/PTSans-Regular.ttf": "/test-task-only/static/media/PTSans-Regular.77e92507394e2309d837.ttf",
+    "static/media/BebasNeue-Regular.ttf": "/test-task-only/static/media/BebasNeue-Regular.12e3683f9192436a7be8.ttf",
+    "index.html": "/test-task-only/index.html",
+    "static/media/header-line.svg": "/test-task-only/static/media/header-line.0d809f220d45257c4b414db9bc293a18.svg",
+    "static/media/control-button.svg": "/test-task-only/static/media/control-button.61945fbf65ae3fba96ab5923f61bf7d1.svg",
+    "static/media/swipe-button.svg": "/test-task-only/static/media/swipe-button.8116521b8361c6daff03b07f30a01cb8.svg",
+    "main.c2a62e08.css.map": "/test-task-only/static/css/main.c2a62e08.css.map",
+    "main.64ef4dca.js.map": "/test-task-only/static/js/main.64ef4dca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2a62e08.css",
+    "static/js/main.64ef4dca.js"
+  ]
+}
