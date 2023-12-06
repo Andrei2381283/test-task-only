@@ -27,7 +27,7 @@ export const DatesSwiper: FC<DatesSwiperProps> = ({ value, dates, }) => {
     </button>}
     <Swiper
       spaceBetween={isMobile ? 25 : 50}
-      slidesPerView={3}
+      slidesPerView={isMobile ? 2 : 3}
       onSlideChange={(swiper: SwiperType) => setCurrentSlide(swiper.activeIndex)}
       onSwiper={setSwiper}
     >
@@ -38,7 +38,7 @@ export const DatesSwiper: FC<DatesSwiperProps> = ({ value, dates, }) => {
         </SwiperSlide>
       )}
     </Swiper>
-    {currentSlide !== Object.keys(dates[value].progress).length - 1 - 2 && !isMobile && swiper && <button onClick={() => swiper.slideNext()} className='DatesSwiper-SwipeButton DatesSwiper-SwipeButton_right'>
+    {currentSlide !== Object.keys(dates[value].progress).length - 1 - (isMobile ? 1 : 2) && !isMobile && swiper && <button onClick={() => swiper.slideNext()} className='DatesSwiper-SwipeButton DatesSwiper-SwipeButton_right'>
       <img src={swipeButton} width={5} height={10} alt='Scroll right arrow' />
     </button>}
   </div>
